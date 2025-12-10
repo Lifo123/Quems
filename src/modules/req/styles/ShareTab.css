@@ -1,0 +1,13 @@
+.share-tab {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: top left;
+  transition: scale .25s, opacity .2s;
+}
+
+.share-tab[data-entering],
+.share-tab[data-exiting] {
+    scale: .95;
+    opacity: 0;
+}

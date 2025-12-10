@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@import './Flifo.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html{
+    background-color: var(--color-gray-1);
+}
+
+.tab-layer {
+  background: linear-gradient(180deg, var(--color-lifo-gradient) -30%, var(--color-gray-1) 20%);
+}

@@ -1,0 +1,24 @@
+@import "./ShareTab.css";
+@import "./SearchTab.css";
+
+.text-keep {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.song-item[data-selected="true"] {
+  background-color: var(--color-gray-a4);
+  outline: solid 1px var(--color-gray-a5);
+}
+
+.rate-good{
+  background-color: red;
+  transition: all .2s ease;
+}
+
+.rate-good[data-entering],
+.rate-good[data-exiting] {
+  background-color: green;
+}
